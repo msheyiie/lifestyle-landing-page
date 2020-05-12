@@ -1,0 +1,499 @@
+*,
+*::before, 
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+  font-size: 62%;
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1.4rem;
+    }
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+.sidebar{
+  display: none;
+}
+
+svg{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.user{
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: .5px solid rgba(143, 142, 142, 0.582);
+  padding: 1.2rem 14rem;
+}
+
+
+a:hover{
+  color: black;
+}
+
+ul{
+  display: flex;
+  justify-content: space-between;
+  width: 60rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+li>a{
+  color: rgba(168, 168, 168, 0.932);
+}
+
+a.Lifestyle{
+  color: black;
+}
+
+main{
+  padding: 4rem 14rem;
+}
+
+.pc-responsive{
+  display: none;
+}
+
+h1{
+  font-weight: 800;
+}
+
+h1+p{
+  line-height: 2.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 2.2rem;
+  color: rgb(92, 91, 91);
+}
+
+section{
+  display: flex;
+  justify-content: space-between;
+}
+
+article{
+  color: white;
+  padding: 1.8rem 1.2rem;
+  border-radius: 7px;
+  box-shadow: 2px 4px 6px 0px rgba(151, 151, 151, 0.555);
+}
+
+.article-horizontal{
+  width: 45rem;
+  height: 17rem;
+}
+
+.wake-up{
+  background-image: linear-gradient(to right, rgb(10, 97, 85), rgba(10, 97, 85, 0.1));
+}
+
+article>p{
+  font-size: 0.8rem;
+  font-weight: 200;
+  opacity: 0.5;
+}
+
+h2{
+  line-height: 2.7rem;
+  margin-top: 1.5rem;
+}
+
+.coffee{
+  width: 9rem;
+  height: 8rem;
+  margin-left: 29rem;
+  margin-top: -2rem;
+  filter: drop-shadow(-5px 0px 3px rgb(65, 64, 64));
+}
+
+button{
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.coffee-button{
+  color: rgba(15, 165, 145, 1);
+}
+
+.interior-food{
+  display: flex;
+  margin-top: 2.5rem;
+}
+
+.article-vertical{
+  width: 20rem;
+  height: 25rem;
+  flex-shrink: 0;
+}
+
+.plant-vase-cont{
+  background-image: linear-gradient(rgb(9, 151, 218), rgba(9, 151, 218, 0.1));
+  margin-right: 2.5rem;
+}
+
+.plant-vase{
+  width: 8rem;
+  height: 8rem;
+  margin: 2rem 0 1.5rem 6.5rem;
+}
+
+.vase-button{
+  color: rgb(9, 151, 218);
+}
+
+.sugar-cont{
+  background-image: linear-gradient(rgb(233, 136, 157), rgba(233, 136, 157, 0.1));
+}
+
+.sugar-detox{
+  width: 12rem;
+  height: 16.2rem;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.sugar-button{
+  color: rgb(233, 136, 157);
+}
+
+.architecture-travel{
+  display: flex;
+}
+
+.architecture-cont{
+  background-color: rgba(12, 9, 31, 0.925);
+  margin-right: 2.5rem;
+}
+
+.architecture{
+  width: 18rem;
+  height: 16rem;
+  margin-top: 2.8rem;
+  margin-left: 3rem;
+}
+
+.sugar-button,.architecture-button,.saharan-button,
+.photography-button{
+  position: relative;
+  bottom: 4.7rem;
+}
+
+.architecture-button{
+  color: rgba(12, 9, 31, 0.925);
+}
+
+.saharan{
+  width: 17rem;
+  height: 16rem;
+  margin-top: 2.7rem;
+  margin-left: -1rem;
+}
+
+.saharan-cont{
+  background-image: linear-gradient(rgb(214, 156, 108), rgba(214, 156, 108, 0.1));
+}
+
+.saharan-button{
+  color: rgb(214, 156, 108) ;
+}
+
+.photography-cont{
+  margin-top: 2.5rem;
+  background-image: linear-gradient(to right, rgb(29, 94, 235), rgba(9, 151, 218, 0.1));
+}
+
+.photography{
+  width: 26rem;
+  height: 19rem;
+  margin-top: -8rem;
+  margin-left: 20.2rem;
+}
+
+.photography-button{
+  color: rgb(29, 94, 235) ;
+}
+
+
+
+
+/* RESPONSIVE BREAKPOINTS */
+
+
+@media(max-width: 1245px){
+  ul {
+    width: 55rem;
+  }
+
+  .photography-cont{
+    display: none;
+  }
+
+  .pc-responsive{
+    display: block;
+  }
+
+  .architecture-travel{
+    flex-direction: column;
+  }
+
+  .architecture-cont{
+    margin-bottom: 2.5rem;
+    margin-right: 0;
+  }
+
+  header{
+    padding: 1.2rem 14rem;
+  }
+
+  main{
+    padding: 4rem 14rem;
+    width: 66%;
+  }
+
+}
+
+
+@media(max-width: 1095px){
+  header{
+    padding: 1.2rem 8rem;
+  }
+
+  main{
+    padding: 4rem 8rem;
+    width: 74%;
+  }
+
+}
+
+@media(max-width: 975px){
+
+  .category-two{
+    margin-left: 2.5rem;
+  }
+
+  ul {
+    width: 47rem;
+  }
+
+}
+
+
+@media(max-width: 875px){
+  .photography-cont{
+    display: block;
+  }
+
+  .pc-responsive{
+    display: none;
+  }
+
+  .architecture-travel{
+    flex-direction: row;
+    margin-top: 2.5rem;
+  }
+
+  .architecture-cont{
+    margin-bottom: 0;
+    margin-right: 2.5rem;
+  }
+
+  .category-two{
+    margin-left: 0;
+  }
+
+
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  html{
+    font-size: 70%;
+  }
+
+  ul {
+    width: 34rem;
+  }
+
+  li{
+    font-size: 1rem;
+  }
+
+}
+
+
+@media(max-width: 720px){
+  header{
+    padding: 1.2rem 5rem;
+  }
+
+  main{
+    padding: 4rem 5rem;
+  }
+
+}
+
+
+
+/* MOBILE BREAKPOINTS */
+
+
+@media(max-width: 650px){
+  html{
+    font-size: 55%;
+  }
+
+  header{
+    padding: 1.2rem 7rem;
+  }
+
+  main{
+    padding: 4rem 7rem;
+  }
+
+  .sidebar-list{
+    display: block;
+    background-color: white;
+    flex-direction: column;
+    padding: 4rem;
+    width: 10rem;
+    height: 100vh;
+    overflow: auto;
+  }
+
+  .sidebar-list>li{
+    font-size: 1.5rem;
+  }
+
+  .sidebar-list>li{
+    margin-top: 4.8rem;
+  }
+
+  #close{
+    margin-left: 13rem;
+    margin-top: 2.5rem;
+    position: absolute;
+  }
+
+  .body{
+    overflow: hidden;
+  }
+
+  .sidebar.show{
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(131, 131, 131, 0.226);
+
+  }
+}
+
+@media(max-width: 550px){
+
+  main{
+    padding: 4rem 4rem;
+  }
+
+  header{
+    padding: 1.2rem 4rem;
+  }
+}
+
+@media(max-width: 500px){
+  header ul>li:nth-child(5), header ul>li:nth-child(6),
+  header ul>li:nth-child(7){
+    display: none;
+  }
+
+  html{
+    font-size: 48%;
+  }
+
+  main{
+    padding: 4rem 5rem;
+  }
+
+  header{
+    padding: 1.2rem 5rem;
+  }
+
+  ul {
+    width: 27rem;
+  }
+
+  .main-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .article-horizontal{
+    width: 40rem;
+    height: 17rem;
+  }
+
+  .article-vertical{
+    width: 17.5rem;
+    height: 25rem;
+  }
+
+  .architecture {
+    width: 15.5rem;
+  }
+
+  .photography {
+    width: 21rem;
+  }
+  
+}
+
+@media(max-width: 465px){
+
+  main{
+    padding: 4rem 3rem;
+  }
+
+  header{
+    padding: 1.2rem 3rem;
+  }
+
+}
+
+@media(max-width: 370px){
+  html{
+    font-size: 42%;
+  }
+
+  #close{
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
